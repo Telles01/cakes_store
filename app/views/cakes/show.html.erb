@@ -1,0 +1,7 @@
+<h1>Info of restaurant </h1>
+
+<p>Name: <%= @cake.name %></p>
+<p>Address:<%= @cake.address %></p>
+<p>Stars: <%= @cake.stars %></p>
+
+<%= link_to 'Remove this Cake', cake_path(@cake), method: :delete %>

@@ -3,7 +3,9 @@
 <ul>
 <% @cakes.each do |cake| %>
 
-<li><%= cake.name %></li>
+<li><%= link_to  cake.name, cake_path(cake) %></li>
 
 <% end %>
 </ul>
+
+<%= link_to 'New Cake', cakes_new_path %>
